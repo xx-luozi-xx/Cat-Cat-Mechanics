@@ -55,7 +55,8 @@ $$
 
 &emsp;&emsp;对于所有的测试点保证：
 &emsp;&emsp;$1<n \leq 100$，$1 \leq P\leq n$
-&emsp;&emsp;$|x_i|, |y_i|, |z_i|,| F_x|, |F_y|,| F_z|\leq 100$。
+&emsp;&emsp;$|x_i|, |y_i|, |z_i| \leq 100$
+&emsp;&emsp;$| F_x|, |F_y|,| F_z|\leq 5000$。
 
 ## 提示：
 &emsp;&emsp;你需要使用浮点数进行计算，同时你需要考虑精度问题，尽可能的减少乘除法等可能降低精度的运算。
