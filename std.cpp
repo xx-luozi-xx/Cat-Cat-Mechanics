@@ -60,7 +60,7 @@ int main(){
 }
 
 void make_fa(int root){
-    for(int i = 0; i < (int)eage[root].size(); ++i){
+    for(int i = 0; i < (int)(eage[root].size()); ++i){
         if(eage[root][i] != fa[root]){
             fa[eage[root][i]] = root;
             make_fa(eage[root][i]);
@@ -70,7 +70,7 @@ void make_fa(int root){
 
 void make_S(int point, Vec3 f){
     bool tran = 0;
-    for(int i = 0; i < (int)eage[point].size(); ++i){
+    for(int i = 0; i < (int)(eage[point].size()); ++i){
         if(eage[point][i] != fa[point]){
             tran = 1;
             Vec3 Pq(pos[point], pos[eage[point][i]]);
