@@ -116,11 +116,6 @@ $$
 ![sample1.png](https://oj.qd.sdu.edu.cn/api/filesys/download/570350901693287879/sample1.png)
 
 
-
-
-
-
-
 ### 附
 #### 向量长度(取模)运算公式
 &emsp;&emsp;设$\vec{a} = (a_x, a_y, a_z)$,则
