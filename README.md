@@ -208,7 +208,7 @@ $$
 $$
  
 #### 向量内积与角度余弦运算公式
-&emsp;&emsp;设$\vec{a} = (a_x, a_y, a_z), \vec{b} = (b_x, b_y, b_z)$,则
+&emsp;&emsp;设非零向量$\vec{a} = (a_x, a_y, a_z), \vec{b} = (b_x, b_y, b_z)$,则
 $$
 \cos<\vec{a},\vec{b}> = \frac{\vec{a}\cdot\vec{b}}{|\vec{a}||\vec{b}|}
 $$
@@ -218,7 +218,7 @@ $$
 \vec{a}\times\vec{b} = (a_y b_z - a_z b_y , a_z b_x - a_x b_z, a_x b_y - a_y b_x)
 $$
 #### 相对误差和绝对误差计算公式
-&emsp;&emsp;设两个实数$a, b$，其中$a$为标准值，$b$为估计值(测量值)则：
+&emsp;&emsp;设两个实数$a, b$，其中$a$为非零标准值，$b$为估计值(测量值)则：
 $$
 \text{绝对误差}(a, b) = |a-b| \\
 \text{相对误差}(a, b) = \frac{|a-b|}{|a|}
