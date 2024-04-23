@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <math.h>
+#include <assert.h>
 using namespace std;
 const int MAX_SIZE = 100+30;
 int n, P;
@@ -54,7 +55,8 @@ int main(){
     make_S(P, F);
     //输出
     for(int i = 1; i <= n; ++i){
-        cout << S[i] << '\n';
+        printf("%lf\n", S[i]);
+        // cout << S[i] << '\n';
     }
     return 0;
 }
@@ -74,6 +76,7 @@ void make_S(int point, Vec3 f){
         if(eage[point][i] != fa[point]){
             tran = 1;
             Vec3 Pq(pos[point], pos[eage[point][i]]);
+            assert(Pq.len2()!=0);
             Vec3 next_f = Pq.times(f.cdot(Pq)/Pq.len2());
             S[point] += f.X(next_f).len();
             make_S(eage[point][i], next_f);
