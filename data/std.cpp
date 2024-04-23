@@ -35,7 +35,12 @@ Vec3 pos[MAX_SIZE];
 double S[MAX_SIZE];
 void make_fa(int root);
 void make_S(int point, Vec3 f);
+void init();
 int main(){
+    int T; cin >> T;
+    again_:init();
+
+    T--;
     cin >> n;
     for(int i = 1; i <= n; ++i){
         cin >> pos[i].x >> pos[i].y >> pos[i].z;
@@ -58,6 +63,7 @@ int main(){
         printf("%lf\n", S[i]);
         // cout << S[i] << '\n';
     }
+    if(T) goto again_;
     return 0;
 }
 
@@ -87,3 +93,13 @@ void make_S(int point, Vec3 f){
     }
 }
 
+void init(){
+    for(int i = 0; i < MAX_SIZE; ++i){
+        eage[i] = vector<int>();
+        fa[i] = int();
+        pos[i] = Vec3();
+        S[i] = double();
+    }
+    F = Vec3();
+    n = P = 0;
+}
